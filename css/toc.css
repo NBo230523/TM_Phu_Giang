@@ -1,0 +1,13 @@
+/* Table of contents (TOC) styles */
+html { scroll-behavior: smooth; }
+
+#toc nav { background: rgba(255,255,255,0.96); }
+.toc-list { list-style: none; padding: 0; margin: 0; max-height: calc(100vh - 220px); overflow: auto; }
+.toc-list li { margin: 0; }
+.toc-list a { display: block; color: #374151; text-decoration: none; padding: 6px 0; }
+.toc-list a:hover { text-decoration: underline; }
+.toc-list a.active { font-weight: 700; color: #111; }
+
+@media (max-width: 1024px) {
+  #toc { display: none; }
+}
