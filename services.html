@@ -10,35 +10,61 @@
 </head>
 <body class="bg-white text-gray-900">
   <!-- Header -->
-  <header class="fixed top-0 w-full h-[150px] shadow-sm flex items-end bg-white z-50">
-  <nav class="max-w-6xl mx-auto w-full flex justify-between items-center px-10 pb-6">
-    
-    <a href="index.html" class="hover:text-gray-300">Trang chủ</a>
-    <a href="services.html" class="hover:text-gray-300 font-semibold border-b-2 border-black">Dịch vụ</a>
-    <a href="portfolio.html" class="hover:text-gray-300">Các dự án</a>
+  <header class="fixed top-0 w-full h-[70px] md:h-[150px] shadow-sm z-50 bg-white">
+  <nav class="max-w-6xl mx-auto w-full flex justify-between items-center px-4 md:px-10 py-4 md:pb-6">
 
-    <a href="index.html" class="inline-block">
-      <img src="img/logo.jpg"
-           alt="PHU GIANG CONTRAJSC"
-           class="h-20 md:h-24 object-contain"
-           loading="lazy">
-    </a>
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-3 items-center">
+          <!-- Left links -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="index.html" class="hover:text-gray-300">Trang chủ</a>
+            <a href="services.html" class="hover:text-gray-300 font-semibold border-b-2 border-black">Dịch vụ</a>
+            <a href="portfolio.html" class="hover:text-gray-300">Các dự án</a>
+          </div>
 
-    <a href="trend_design.html" class="hover:text-gray-300">Thiết kế hiện đại</a>
-    <a href="press.html" class="hover:text-gray-300">Tin tức</a>
-    <a href="contact.html" class="hover:text-gray-300">Liên hệ</a>
+          <!-- Logo (center) -->
+          <div class="flex justify-center">
+            <a href="index.html">
+              <img src="img/logo.jpg" alt="PHU GIANG CONTRAJSC" class="h-12 md:h-24 object-contain" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Right links -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="trend_design.html" class="hover:text-gray-300">Thiết kế</a>
+            <a href="press.html" class="hover:text-gray-300">Tin tức</a>
+            <a href="contact.html" class="hover:text-gray-300">Liên hệ</a>
+          </div>
+        </div>
+
+    <!-- Mobile menu button -->
+    <button id="nav-toggle" class="md:hidden ml-2 p-2 rounded focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" aria-label="Mở menu">
+      <!-- hamburger SVG -->
+      <svg id="hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="absolute left-0 right-0 top-full bg-white text-black p-4 md:hidden hidden shadow-md z-60">
+      <a href="index.html" class="block py-2 border-b border-gray-200">Trang chủ</a>
+      <a href="services.html" class="block py-2 border-b border-gray-200 font-semibold">Dịch vụ</a>
+      <a href="portfolio.html" class="block py-2 border-b border-gray-200">Các dự án</a>
+      <a href="trend_design.html" class="block py-2 border-b border-gray-200">Thiết kế</a>
+      <a href="press.html" class="block py-2 border-b border-gray-200">Tin tức</a>
+      <a href="contact.html" class="block py-2">Liên hệ</a>
+    </div>
 
   </nav>
-</header>
+  </header>
 
   <!-- Services Section -->
   <section class="max-w-6xl mx-auto pt-48 px-6">
-    <h1 class="text-4xl font-bold mb-10 text-center">LĨNH VỰC HOẠT ĐỘNG CHÍNH</h1>
+    <h1 class="text-4xl font-bold mb-10 text-center">Lĩnh vực hoạt động chính</h1>
 
     <div class="grid md:grid-cols-3 gap-10">
       <div class="p-6 border rounded-lg shadow hover:shadow-2xl transition overflow-hidden">
         <img src="img/services/hoan_thien_trang_tri.jpg" alt="THI CÔNG, HOÀN THIỆN VÀ TRANG TRÍ CÔNG TRÌNH" class="rounded-lg mb-4 h-48 w-full object-cover">
-        <h3 class="text-xl font-semibold mb-2">THI CÔNG, HOÀN THIỆN VÀ TRANG TRÍ CÔNG TRÌNH</h3>
+        <h3 class="text-xl font-semibold mb-2">Thi công, hoàn thiện và trang trí công trình</h3>
         <p class="text-gray-600">
           Thi công hoàn thiện và trang trí cửa, showroom, văn phòng, nhà hàng, văn phòng, khách sạn...
         </p>
@@ -46,7 +72,7 @@
 
       <div class="p-6 border rounded-lg shadow hover:shadow-2xl transition overflow-hidden">
         <img src="img/services/thiet_ke.jpg" alt="THIẾT KẾ CÔNG TRÌNH" class="rounded-lg mb-4 h-48 w-full object-cover">
-        <h3 class="text-xl font-semibold mb-2">THIẾT KẾ CÔNG TRÌNH</h3>
+        <h3 class="text-xl font-semibold mb-2">Thiết kế công trình</h3>
         <p class="text-gray-600">
           Thiết kế kiến trúc công trình nội, ngoại thất trong xây dựng dân dụng và công nghiệp.
         </p>
@@ -54,7 +80,7 @@
   
       <div class="p-6 border rounded-lg shadow hover:shadow-2xl transition overflow-hidden">
         <img src="img/services/tu_van_thi_cong.jpg" alt="TƯ VẤN VÀ THI CÔNG CÁC GIẢI PHÁP CẢI TẠO NHÀ PHỐ Ở HÀ NỘI" class="rounded-lg mb-4 h-48 w-full object-cover">
-        <h3 class="text-xl font-semibold mb-2">TƯ VẤN VÀ THI CÔNG CÁC GIẢI PHÁP CẢI TẠO NHÀ PHỐ Ở HÀ NỘI</h3>
+        <h3 class="text-xl font-semibold mb-2">Tư vấn và thi công các giải pháp cải tạo nhà phố ở Hà Nội</h3>
         <p class="text-gray-600">
           Tư vấn, đề xuất và thi công các giải pháp cải tạo nhà phố tại Hà Nội, phù hợp hiện trạng và nhu cầu sử dụng của từng công trình.
         </p>
@@ -62,7 +88,7 @@
 
       <div class="p-6 border rounded-lg shadow hover:shadow-2xl transition overflow-hidden">
         <img src="img/services/do_go.jpg" alt="SẢN XUẤT ĐỒ GỖ" class="rounded-lg mb-4 h-48 w-full object-cover">
-        <h3 class="text-xl font-semibold mb-2">SẢN XUẤT ĐỒ GỖ</h3>
+        <h3 class="text-xl font-semibold mb-2">Sản xuất đồ gỗ</h3>
         <p class="text-gray-600">
           Cơ sở: Xóm Hòa, Cần Kiệm, Thạch Thất, Hà Nội.
         </p>
@@ -73,7 +99,7 @@
       
       <div class="p-6 border rounded-lg shadow hover:shadow-2xl transition overflow-hidden">
         <img src="img/services/vat_lieu.jpg" alt="KINH DOANH VẬT LIỆU HOÀN THIỆN CÔNG TRÌNH" class="rounded-lg mb-4 h-48 w-full object-cover">
-        <h3 class="text-xl font-semibold mb-2">KINH DOANH VẬT LIỆU HOÀN THIỆN CÔNG TRÌNH</h3>
+        <h3 class="text-xl font-semibold mb-2">Kinh doanh vật liệu hoàn thiện công trình</h3>
         <p class="text-gray-600">
           Kinh doanh vật liệu hoàn thiện: gỗ công nghiệp, gỗ tự nhiên, trần vách ngăn thạch cao, phào chỉ nhựa, thảm sàn, sàn gỗ công nghiêp...
         </p>
@@ -81,7 +107,7 @@
   
       <div class="p-6 border rounded-lg shadow hover:shadow-2xl transition overflow-hidden">
         <img src="img/services/gia_cong_co_khi.jpg" alt="GIA CÔNG CƠ KHÍ XÂY DỰNG VÀ MỸ THUẬT" class="rounded-lg mb-4 h-48 w-full object-cover">
-        <h3 class="text-xl font-semibold mb-2">GIA CÔNG CƠ KHÍ XÂY DỰNG VÀ MỸ THUẬT</h3>
+        <h3 class="text-xl font-semibold mb-2">Gia công cơ khí xây dựng và mỹ thuật</h3>
         <p class="text-gray-600">
           Gia công lắp đặt cầu thang, cửa nhôm kính, cửa, cổng, cầu thang sắt mỹ thuật, gia công sản xuất nội thất kim loại và chi tiết họa tiết hoa văn mỹ thuật kim loại.
         </p>
@@ -89,14 +115,14 @@
     </div>
   </section>
 
-  <footer class="bg-white text-black py-8 mt-20 border-t border-gray-700">
+  <footer class="bg-black text-white py-8 mt-20 border-t border-gray-800">
     <div class="max-w-6xl mx-auto space-y-3 text-left">
-      <p class="text-lg font-semibold"><strong>CÔNG TY CỔ PHẦN XÂY DỰNG & TM PHÚ GIANG</strong></p>
+      <p class="text-lg font-semibold">CÔNG TY CỔ PHẦN XÂY DỰNG & TM PHÚ GIANG</p>
       <p class="text-sm font-semibold">PHU GIANG CONTRUCTION & TRADING JOINT STOCK COMPANY</p>
       <p><img src="img/icon/sdt-icon.png" class="inline w-6 mr-2 align-middle"> 0962266066</p>
-      <p><a href="https://zalo.me/0962266066" target="_blank" class="hover:underline"><img src="img/icon/zalo-icon.png" class="inline w-6 mr-2 align-middle"> 0962266066</a></p>
-      <p><a href="mailto:phugiangcontrajsc@gmail.com" class="hover:underline"><img src="img/icon/email-icon.png" class="inline w-6 mr-2 align-middle"> phugiangcontrajsc@gmail.com</a></p>
-      <p><strong><img src="img/icon/diachi-icon.png" class="inline w-6 mr-2 align-middle"> Số 3, ngách 32/10, phố Viên, Phường Đức Thắng, Quận Bắc Từ Liêm, Thành phố Hà Nội, Việt Nam</strong></p>
+      <p><a href="https://zalo.me/0962266066" target="_blank" class="hover:underline hover:text-gray-500"><img src="img/icon/zalo1.png" class="inline w-6 mr-2 align-middle"> 0962266066</a></p>
+      <p><a href="mailto:phugiangcontrajsc@gmail.com" class="hover:underline hover:text-gray-500"><img src="img/icon/email1.png" class="inline w-6 mr-2 align-middle"> phugiangcontrajsc@gmail.com</a></p>
+      <p><img src="img/icon/diachi-icon.png" class="inline w-6 mr-2 align-middle"> Số 3, ngách 32/10, phố Viên, Phường Đức Thắng, Quận Bắc Từ Liêm, Thành phố Hà Nội, Việt Nam</p>
     </div>
     <div class="border-t border-gray-700 mt-6 pt-4 text-sm text-gray-400 text-center max-w-6xl mx-auto">
       © 2025 PHU GIANG CONTRAJSC. All Rights Reserved.

@@ -9,34 +9,60 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
-  <header class="fixed top-0 w-full h-[150px] shadow-sm flex items-end bg-white z-50">
-  <nav class="max-w-6xl mx-auto w-full flex justify-between items-center px-10 pb-6">
-    
-    <a href="index.html" class="hover:text-gray-300">Trang chủ</a>
-    <a href="services.html" class="hover:text-gray-300">Dịch vụ</a>
-    <a href="portfolio.html" class="hover:text-gray-300 font-semibold border-b-2 border-black">Các dự án</a>
+  <header class="fixed top-0 w-full h-[70px] md:h-[150px] shadow-sm z-50 bg-white">
+  <nav class="max-w-6xl mx-auto w-full flex justify-between items-center px-4 md:px-10 py-4 md:pb-6">
 
-    <a href="index.html" class="inline-block">
-      <img src="img/logo.jpg"
-           alt="PHU GIANG CONTRAJSC"
-           class="h-20 md:h-24 object-contain"
-           loading="lazy">
-    </a>
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-3 items-center">
+          <!-- Left links -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="index.html" class="hover:text-gray-300">Trang chủ</a>
+            <a href="services.html" class="hover:text-gray-300">Dịch vụ</a>
+            <a href="portfolio.html" class="hover:text-gray-300 font-semibold border-b-2 border-black">Các dự án</a>
+          </div>
 
-    <a href="trend_design.html" class="hover:text-gray-300">Thiết kế hiện đại</a>
-    <a href="press.html" class="hover:text-gray-300">Tin tức</a>
-    <a href="contact.html" class="hover:text-gray-300">Liên hệ</a>
+          <!-- Logo (center) -->
+          <div class="flex justify-center">
+            <a href="index.html">
+              <img src="img/logo.jpg" alt="PHU GIANG CONTRAJSC" class="h-12 md:h-24 object-contain" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Right links -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="trend_design.html" class="hover:text-gray-300">Thiết kế</a>
+            <a href="press.html" class="hover:text-gray-300">Tin tức</a>
+            <a href="contact.html" class="hover:text-gray-300">Liên hệ</a>
+          </div>
+        </div>
+
+    <!-- Mobile menu button -->
+    <button id="nav-toggle" class="md:hidden ml-2 p-2 rounded focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" aria-label="Mở menu">
+      <!-- hamburger SVG -->
+      <svg id="hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="absolute left-0 right-0 top-full bg-white text-black p-4 md:hidden hidden shadow-md z-60">
+      <a href="index.html" class="block py-2 border-b border-gray-200">Trang chủ</a>
+      <a href="services.html" class="block py-2 border-b border-gray-200">Dịch vụ</a>
+      <a href="portfolio.html" class="block py-2 border-b border-gray-200 font-semibold">Các dự án</a>
+      <a href="trend_design.html" class="block py-2 border-b border-gray-200">Thiết kế</a>
+      <a href="press.html" class="block py-2 border-b border-gray-200">Tin tức</a>
+      <a href="contact.html" class="block py-2">Liên hệ</a>
+    </div>
 
   </nav>
-</header>
+  </header>
 
   <section class="max-w-6xl mx-auto pt-48 px-10">
-    <h1 class="text-4xl font-bold mb-10 text-center">MỘT SỐ CÔNG TRÌNH TIÊU BIỂU</h1>
+    <h1 class="text-3xl font-bold mb-10 text-center">Một số công trình tiêu biểu đã hoàn thành</h1>
     <div class="grid gap-6">
       <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
         <div class="p-4">
-          <h3 class="font-semibold">1-HOÀN THIỆN TRỌN GÓI VÀ LẮP ĐẶT NỘI THẤT VĂN PHÒNG LÀM VIỆC ANKER-TẦNG 18, TÒA NHÀ CEO GROUP, PHẠM HÙNG, HÀ NỘI</h3>
-          <p class="font-semibold mt-6">>>> HÌNH ẢNH THIẾT KẾ</p>
+          <h3 class="font-semibold">1-Hoàn thiện trọn gói và lắp đặt nội thất văn phòng làm việc Anker-Tầng 18, Tòa nhà CEO Group, Phạm Hùng, Hà Nội</h3>
+          <p class="font-semibold mt-6">>>> Hình ảnh thiết kế</p>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/1-1-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/1-1-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -48,7 +74,7 @@
             <img src="img/portfolio/1-1-8.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/1-1-9.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
           </div>
-          <p class="font-semibold mt-6">>>> HÌNH ẢNH THI CÔNG</p>
+          <p class="font-semibold mt-6">>>> Hình ảnh thi công</p>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/1-2-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/1-2-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -67,7 +93,7 @@
       </div>
       <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
         <div class="p-4">
-          <h3 class="font-semibold">2-HOÀN THIỆN VÀ LẮP ĐẶT NỘI THẤT NHÀ LIỀN KỀ 108 NGUYỄN TRÃI, THANH XUÂN, HÀ NỘI</h3>
+          <h3 class="font-semibold">2-Hoàn thiện và lắp đặt nội thất nhà liền kề 108 Nguyễn Trãi, Thanh Xuân, Hà Nội</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/2-3.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/2-4.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -85,8 +111,8 @@
       </div>
       <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
         <div class="p-4">
-          <h3 class="font-semibold">3-HOÀN THIỆN VÀ LẮP ĐẶT NỘI THẤT TỔ HỢP GOFL DIỆN TÍCH 2000M2: GOFL ON STUDIO-TẦNG 8, TÒA NHÀ GOLDEN PARK, SỐ 2 PHẠM VĂN BẠCH, YÊN HÒA, CẦU GIẤY, HÀ NỘI</h3>
-          <p class="font-semibold mt-6">>>> HÌNH ẢNH THIẾT KẾ</p>
+          <h3 class="font-semibold">3-Hoàn thiện và lắp đặt nội thất tổ hợp GOFL diện tích 2000m2: GOFL ON STUDIO-Tầng 8, Tòa nhà Golden Park, Số 2 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội</h3>
+          <p class="font-semibold mt-6">>>> Hình ảnh thiết kế</p>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/3-1-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/3-1-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -98,7 +124,7 @@
             <img src="img/portfolio/3-1-8.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/3-1-9.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
           </div>
-          <p class="font-semibold mt-6">>>> HÌNH ẢNH THI CÔNG</p>
+          <p class="font-semibold mt-6">>>> Hình ảnh thi công</p>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/3-2-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/3-2-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -117,7 +143,7 @@
       </div>
       <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
         <div class="p-4">
-          <h3 class="font-semibold">4-HOÀN THIỆN TRỌN GÓI VÀ LẮP ĐẶT NỘI THẤT TẦNG 4, TẦNG 8 TÒA NHÀ MB, 124 LÝ THÁI TỔ, TP BẮC NINH</h3>
+          <h3 class="font-semibold">4-Hoàn thiện trọn gói và lắp đặt nội thất tầng 4, tầng 8 tòa nhà MB, 124 Lý Thái Tổ, TP Bắc Ninh</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/4-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/4-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -136,7 +162,7 @@
       </div>
       <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
         <div class="p-4">
-          <h3 class="font-semibold">5-HOÀN THIỆN TRỌN GÓI VÀ LẮP ĐẶT NỘI THẤT VĂN PHÒNG FASTPAY VIỆT NAM, TẦNG 4 TÒA NHÀ TRƯỜNG THỊNH SỐ 1 PHÙNG CHÍ KIÊN, CẦU GIẤY, HÀ NỘI</h3>
+          <h3 class="font-semibold">5-Hoàn thiện trọn gói và lắp đặt nội thất văn phòng Fastpay Việt Nam, tầng 4 tòa nhà Trường Thịnh số 1 Phùng Chí Kiên, Cầu Giấy, Hà Nội</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/5-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/5-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -158,7 +184,7 @@
       </div>
       <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
         <div class="p-4">
-          <h3 class="font-semibold">6-THIẾT KẾ VÀ THI CÔNG TRỌN GÓI LẮP ĐẶT NỘI THẤT VĂN PHÒNG CÔNG TY TNHH CÔNG NGHỆ SƠN NGUYỄN, TẦNG 2 TÒA NHÀ 21 B7 GREENSTAR, 234 PHẠM VĂN ĐỒNG, HÀ NỘI</h3>
+          <h3 class="font-semibold">6-Thiết kế và thi công trọn gói lắp đặt nội thất văn phòng công ty TNHH Công nghệ Sơn Nguyễn, tầng 2 tòa nhà 21 B7 Greenstar, 234 Phạm Văn Đồng, Hà Nội</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/6-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/6-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -174,7 +200,7 @@
       </div>
       <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
         <div class="p-4">
-          <h3 class="font-semibold">7-THIẾT KẾ VÀ THI CÔNG TRỌN GÓI NỘI THẤT NHÀ PHỐ 102 PHỐ VĂN HỘI, ĐÔNG NGẠC, HÀ NỘI</h3>
+          <h3 class="font-semibold">7-Thiết kế và thi công trọn gói nội thất nhà phố 102 Phố Văn Hội, Đông Ngạc, Hà Nội</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/7-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/7-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -195,7 +221,7 @@
       </div>
       <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
         <div class="p-4">
-          <h3 class="font-semibold">8-THI CÔNG TRỌN GÓI NỘI THẤT NHÀ HÀNG CAO CẤP SIENNA TEPPANYAKI-SỐ 1 HOÀNG SĨ KHẢI, VÕ CƯỜNG, TP BẮC NINH</h3>
+          <h3 class="font-semibold">8-Thi công trọn gói nội thất nhà hàng cao cấp Sienna Teppanyaki-Số 1 Hoàng Sĩ Khải, Võ Cường, TP Bắc Ninh</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/8-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/8-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -222,7 +248,7 @@
       </div>
       <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
         <div class="p-4">
-          <h3 class="font-semibold">9-THIẾT KẾ VÀ THI CÔNG TRỌN GÓI NỘI THẤT NHÀ PHỐ 261 QUANG TRUNG, TP TUYÊN QUANG</h3>
+          <h3 class="font-semibold">9-Thiết kế và thi công trọn gói nội thất nhà phố 261 Quang Trung, TP Tuyên Quang</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             <img src="img/portfolio/9-1.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
             <img src="img/portfolio/9-2.jpg" alt="" class="portfolio-thumb cursor-pointer w-full aspect-video object-cover rounded transition-transform transform hover:scale-105">
@@ -240,14 +266,14 @@
     </div>
   </section>
 
-  <footer class="bg-white text-black py-8 mt-20 border-t border-gray-700">
+  <footer class="bg-black text-white py-8 mt-20 border-t border-gray-800">
     <div class="max-w-6xl mx-auto space-y-3 text-left">
-      <p class="text-lg font-semibold"><strong>CÔNG TY CỔ PHẦN XÂY DỰNG & TM PHÚ GIANG</strong></p>
+      <p class="text-lg font-semibold">CÔNG TY CỔ PHẦN XÂY DỰNG & TM PHÚ GIANG</p>
       <p class="text-sm font-semibold">PHU GIANG CONTRUCTION & TRADING JOINT STOCK COMPANY</p>
       <p><img src="img/icon/sdt-icon.png" class="inline w-6 mr-2 align-middle"> 0962266066</p>
-      <p><a href="https://zalo.me/0962266066" target="_blank" class="hover:underline"><img src="img/icon/zalo-icon.png" class="inline w-6 mr-2 align-middle"> 0962266066</a></p>
-      <p><a href="mailto:phugiangcontrajsc@gmail.com" class="hover:underline"><img src="img/icon/email-icon.png" class="inline w-6 mr-2 align-middle"> phugiangcontrajsc@gmail.com</a></p>
-      <p><strong><img src="img/icon/diachi-icon.png" class="inline w-6 mr-2 align-middle"> Số 3, ngách 32/10, phố Viên, Phường Đức Thắng, Quận Bắc Từ Liêm, Thành phố Hà Nội, Việt Nam</strong></p>
+      <p><a href="https://zalo.me/0962266066" target="_blank" class="hover:underline hover:text-gray-500"><img src="img/icon/zalo1.png" class="inline w-6 mr-2 align-middle"> 0962266066</a></p>
+      <p><a href="mailto:phugiangcontrajsc@gmail.com" class="hover:underline hover:text-gray-500"><img src="img/icon/email1.png" class="inline w-6 mr-2 align-middle"> phugiangcontrajsc@gmail.com</a></p>
+      <p><img src="img/icon/diachi-icon.png" class="inline w-6 mr-2 align-middle"> Số 3, ngách 32/10, phố Viên, Phường Đức Thắng, Quận Bắc Từ Liêm, Thành phố Hà Nội, Việt Nam</p>
     </div>
     <div class="border-t border-gray-700 mt-6 pt-4 text-sm text-gray-400 text-center max-w-6xl mx-auto">
       © 2025 PHU GIANG CONTRAJSC. All Rights Reserved.
@@ -294,5 +320,6 @@
           });
         })();
       </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
